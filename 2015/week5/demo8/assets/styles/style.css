@@ -33,21 +33,44 @@ main {
   width: 40%;
 }
 /* add button for note */
-.note-input button {
+button {
   padding: 2px;
   margin-left: 5px;
   border-radius: 0;
   border: 1px solid #dedede;
   cursor: pointer;
 }
+
+#delete-all {
+  margin-top: 10px;
+  margin-left: 0px;
+  color: red;
+}
+
+.note-output p {
+  margin-right: 5%;
+}
+
+.note-output .del-link {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+
+.note-output div {
+  position: relative;
+}
+
 /* even note paragraph output */
-.note-output p:nth-child(even) {
+.note-output div:nth-child(even) {
   background-color: #ccc;
 }
 /* odd note paragraph output */
-.note-output p:nth-child(odd) {
+.note-output div:nth-child(odd) {
   background-color: #eee;
 }
+
 /* site footer */
 footer {
   margin-top: 5px;
